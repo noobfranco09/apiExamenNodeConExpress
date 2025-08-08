@@ -2,7 +2,7 @@ import db from '../../database/db.config.js'
 
 export async function traerTodos() {
 
-    const [rows] = await db.query("select * from productos order by desc");
+    const [rows] = await db.query("select * from productos order by PrimerNombre desc");
     return rows;
     
 }
